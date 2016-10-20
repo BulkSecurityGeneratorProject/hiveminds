@@ -1,0 +1,10 @@
+version: '2'
+services:
+    natureexclusive-elasticsearch:
+        container_name: natureexclusive-elasticsearch
+        image: elasticsearch:2.4.0
+        # volumes:
+        #     - ~/volumes/jhipster/natureexclusive/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
